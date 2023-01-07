@@ -318,7 +318,38 @@ fetch() api
 		}
 	</script>
 
+Node js:
+runtime environment
 
+module: 
+
+predefined modules: http , fs , path ,
+user defined modules: .js
+3rd party modules: dependencies
+
+npm node package manager
+npm install dependency-name
+npm i name
+
+root folder: index.js-> start , package.json  -> name, version, description, author, lice, dependencies
+.env
+
+npm init 
+
+npm i dotenv 
+
+require() function common js 
+import statement es  
+
+nodemon cli
+
+
+3rd party module
+local: functions and properties
+global : cli 
+
+-s save 
+npm i module-name -g 
 
 
 
