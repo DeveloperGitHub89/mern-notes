@@ -354,18 +354,38 @@ npm i module-name -g
 
 
 
+express 
+npm i express -s 
+
+import express from 'express';
+import 'dotenv/config';
+import {StatusCodes} from 'http-status-codes';
+
+const app=express();
+app.use(express.json());
+app.get('/',(request,response)=>{
+    response.send("hello");
+});
+
+// app.get('/sum/:a/:b',(request,response)=>{
+//     var x=request.params.a;
+//     var y=request.params.b;
+//     var z=x+y;
+//     response.status(StatusCodes.OK).send({sum:z});
+// });
+
+app.post('/sum',(request,response)=>{
+    console.log(request.body);
+    var x=request.body.a;
+    var y=request.body.b;
+    var z=x+y;
+    response.status(StatusCodes.OK).send({sum:z});
+});
 
 
-
-
-
-
-
-
-
-
-
-
+app.listen(process.env.PORT,()=>{
+    console.log(`Server listening on port ${process.env.PORT}`);
+})
 
 
 
