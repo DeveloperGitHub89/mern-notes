@@ -390,6 +390,52 @@ app.listen(process.env.PORT,()=>{
 
 
 
+React JS:
+frontend 
+SPA: single page application
+
+only one html web page
+virtual dom : difference algorithm 
+
+component based architecture 
+component: ui element 
+
+npm install create-react-app -g
+create-react-app my-app
+or
+npx create-react-app my-app
+
+
+ways to create a component:
+1. class component
+2. function component
+
+Navbar.js
+function Navbar(){
+	return (
+			<>
+					<ul></ul>
+			</>
+	)
+}
+
+ 
+two properties of a component:
+1. props: attributes to any component 
+          
+2. state 
+
+
+export class Header extends Component{
+	constructor(){
+		super();
+	}
+	render(){
+		return (
+			
+		)
+	}
+}
 
 
 
