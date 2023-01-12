@@ -438,6 +438,21 @@ export class Header extends Component{
 }
 
 
+hooks: 
+are the functions using which features of 
+class components can be implemented in function
+components
+use prefix:
+useState()
+useEffect()
+useCallback()
+
+const [state-name,function-name]=useState(intial-value)
+
+const [score,setScore]=useState(0)
+
+
+https://www.smashingmagazine.com/2020/10/react-validation-formik-yup/
 
 
 
